@@ -2,11 +2,11 @@ Deze game is gebaseerd op het template voor 4HV van het Emmauscollege Rotterdam
 
 ## Mijn spel: *naam van het spel*
 Gemaakt door:
-- *naam van leerling 1*
-- *naam van leerling 2*
+- *Keenan Cheung*
+  
 
 ### Beschrijving
-*korte beschrijving van het spel, wat je kunt doen in het spel, wat het doel is*
+*Run and Jump!*
 
 ## Mijn planning
 Werk de planning af van boven naar beneden<br>
@@ -15,7 +15,7 @@ Geef aan met [x] welke onderdelen af zijn
 ### Basisstappen
 Basis: uitleg, spelen, afgaan en punten
 - [x] 1. maak index.html, style.css en script.js met canvas
-- [ ] 2. teken speler
+- [x] 2. teken speler
         - Zet je code in de functie tekenAlles()
 - [ ] 3. beweeg speler
         - Zet je code in de functie beweegAlles()

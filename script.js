@@ -16,6 +16,14 @@ var spelStatus = SPELEN;
 
 var spelerX = 600; // x-positie van speler
 var spelerY = 600; // y-positie van speler
+var spelerYsnelheid = 20; // snelheid van de speler die beweegt
+var spelerYgravity = 50; // hoeveel seconde bij de snelheid komt door de gravity
+var spelerYvloer = 600; // hoogte van de vloer, player can't force through the ground
+var ArrowLeft = 37;
+var ArrowRight = 38;
+var ArrowUp = 39;
+var ArrowDown = 40;
+
 
 /* ********************************************* */
 /* functies die je gebruikt in je game           */
@@ -26,6 +34,20 @@ var spelerY = 600; // y-positie van speler
  */
 var beweegAlles = function () {
   // speler
+   if (keyIsDown(37)) {
+    spelerX = spelerX - 5;
+  }
+  if (keyIsDown(38)) {
+    spelerY = spelerY - 5;
+  }
+  if (keyIsDown(39)) {
+    spelerX = spelerX + 5;
+  }
+  if (keyIsDown(40)) {
+    spelerY = spelerY + 5;
+  }
+};
+
 
   // vijand
 
