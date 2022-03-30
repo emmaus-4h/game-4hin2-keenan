@@ -16,9 +16,7 @@ var spelStatus = SPELEN;
 
 var spelerX = 600; // x-positie van speler
 var spelerY = 600; // y-positie van speler
-var spelerYsnelheid = 20; // snelheid van de speler die beweegt
-var spelerYgravity = 50; // hoeveel seconde bij de snelheid komt door de gravity
-var spelerYvloer = 600; // hoogte van de vloer, player can't force through the ground
+
 var ArrowLeft = 37;
 var ArrowRight = 38;
 var ArrowUp = 39;
@@ -46,7 +44,7 @@ var beweegAlles = function () {
   if (keyIsDown(40)) {
     spelerY = spelerY + 5;
   }
-};
+
 
 
   // vijand
@@ -79,9 +77,9 @@ var tekenAlles = function () {
   // kogel
 
   // speler
-  fill("white");
+  fill("pink");
   rect(spelerX - 25, spelerY - 25, 50, 50);
-  fill("black");
+  fill("green");
   ellipse(spelerX, spelerY, 10, 10);
 
   // punten en health
@@ -111,7 +109,7 @@ function setup() {
   createCanvas(1280, 720);
 
   // Kleur de achtergrond blauw, zodat je het kunt zien
-  background('blue');
+  background('skyblue');
 }
 
 /**
