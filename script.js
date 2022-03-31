@@ -17,6 +17,9 @@ var spelStatus = SPELEN;
 var spelerX = 600; // x-positie van speler
 var spelerY = 600; // y-positie van speler
 
+var HP = 100; // HP van speler
+
+
 var ArrowLeft = 37;
 var ArrowRight = 38;
 var ArrowUp = 39;
@@ -33,18 +36,22 @@ var ArrowDown = 40;
 var beweegAlles = function () {
   // speler
    if (keyIsDown(37)) {
-    spelerX = spelerX - 5;
+    spelerX = spelerX - 10;
   }
   if (keyIsDown(38)) {
-    spelerY = spelerY - 5;
+    spelerY = spelerY - 10;
   }
   if (keyIsDown(39)) {
-    spelerX = spelerX + 5;
+    spelerX = spelerX + 10;
   }
   if (keyIsDown(40)) {
-    spelerY = spelerY + 5;
+    spelerY = spelerY + 10;
   }
 
+  if (spelerY < 0) { spelerY = 0; }
+  if (spelerX < 0) { spelerX = 0; }
+  if (spelerY > 720) { spelerY = 720; }
+  if (spelerX > 1280) { spelerX = 1280; }
 
 
   // vijand
@@ -71,7 +78,8 @@ var verwerkBotsing = function () {
  */
 var tekenAlles = function () {
   // achtergrond
-
+ fill ("skyblue");
+  rect (0,0,1280,720);
   // vijand
 
   // kogel
