@@ -6,7 +6,7 @@ Gemaakt door:
   
 
 ### Beschrijving
-*Run and Jump!*
+*Run and Jump with avoiding enemies!*
 
 ## Mijn planning
 Werk de planning af van boven naar beneden<br>
