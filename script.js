@@ -17,6 +17,10 @@ var spelStatus = SPELEN;
 var spelerX = 600; // x-positie van speler
 var spelerY = 600; // y-positie van speler
 
+var vijandX = 600; // x-positie van vijand
+var vijandY = 200; // y-positie van vijand
+
+
 var HP = 100; // HP van speler
 
 
@@ -55,6 +59,11 @@ var beweegAlles = function () {
 
 
   // vijand
+  vijandY = vijandY + 10;
+
+  if (vijandY > 720) {
+    vijandY = 0;
+  }
 
   // kogel
 };
@@ -80,7 +89,14 @@ var tekenAlles = function () {
   // achtergrond
  fill ("skyblue");
   rect (0,0,1280,720);
+  
   // vijand
+  fill("blue");
+  rect(vijandX - 25, vijandY - 25, 50, 50);
+  fill("orange");
+  ellipse(vijandX, vijandY, 50, 50);
+
+
 
   // kogel
 
@@ -92,7 +108,7 @@ var tekenAlles = function () {
 
   // punten en health
   fill("darkred");
-  textSize(32);
+  textSize(35);
   text("HealthPoints = " + String(HP), 10, 30);
 
 };
