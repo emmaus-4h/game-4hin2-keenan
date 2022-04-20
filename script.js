@@ -107,6 +107,8 @@ var checkGameOver = function () {
   } else {
     return false; 
   }
+
+  };
   // check of HP 0 is , of tijd op is, of ...
 
 
