@@ -20,6 +20,10 @@ var spelerY = 600; // y-positie van speler
 var vijandX = 600; // x-positie van vijand
 var vijandY = 200; // y-positie van vijand
 
+var vijandX2 = 800; // x-positie van vijand 2
+var vijandY2 = 400; // y-positie van vijand 2
+
+
 
 var HP = 100; // HP van speler
 var Points = 0; // Punten van speler
@@ -68,6 +72,14 @@ var beweegAlles = function () {
     vijandY = 0;
   }
 
+  // vijand 2
+   vijandY2 = vijandY2 + 10;
+
+  if (vijandY2 > 720) {
+    vijandY2 = 0;
+  }
+
+
   // kogel
 };
 
@@ -82,6 +94,17 @@ var verwerkBotsing = function () {
     vijandX - spelerX > -50 &&
     vijandY - spelerY < 50 &&
     vijandY - spelerY > -50
+  ) {
+    console.log("botsing");
+    HP = HP-1;
+  }
+
+  // botsing speler tegen vijand 2
+   // botsing speler tegen vijand
+   if (vijandX2 - spelerX < 50 &&
+    vijandX2 - spelerX > -50 &&
+    vijandY2 - spelerY < 50 &&
+    vijandY2 - spelerY > -50
   ) {
     console.log("botsing");
     HP = HP-1;
@@ -106,6 +129,12 @@ var tekenAlles = function () {
   rect(vijandX - 25, vijandY - 25, 50, 50);
   fill("orange");
   ellipse(vijandX, vijandY, 50, 50);
+
+    // vijand 2
+  fill("pink");
+  rect(vijandX2 - 25, vijandY2 - 25, 50, 50);
+  fill("red");
+  ellipse(vijandX2, vijandY2, 50, 50);
 
 
 
