@@ -33,6 +33,7 @@ var ArrowLeft = 37;
 var ArrowRight = 38;
 var ArrowUp = 39;
 var ArrowDown = 40;
+var Spacebar = 32;
 
 
 /* ********************************************* */
