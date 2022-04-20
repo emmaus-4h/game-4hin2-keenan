@@ -39,7 +39,7 @@ var ArrowDown = 40;
  */
 var beweegAlles = function () {
   // speler
-  console.log('Speler positie'+ spelerX + spelerY);
+  console.log('Speler positie ' + spelerX + spelerY);
    if (keyIsDown(37)) {
     spelerX = spelerX - 10;
   }
@@ -76,6 +76,14 @@ var beweegAlles = function () {
  */
 var verwerkBotsing = function () {
   // botsing speler tegen vijand
+   if (vijandX - spelerX < 50 &&
+    vijandX - spelerX > -50 &&
+    vijandY - spelerY < 50 &&
+    vijandY - spelerY > -50
+  ) {
+    console.log("botsing");
+    HP = HP-1;
+  }
 
   // botsing kogel tegen vijand
 
