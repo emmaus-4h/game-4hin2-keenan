@@ -22,6 +22,7 @@ var vijandY = 200; // y-positie van vijand
 
 
 var HP = 100; // HP van speler
+var Points = 0; // Punten van speler
 
 
 var ArrowLeft = 37;
@@ -119,6 +120,10 @@ var tekenAlles = function () {
   fill("darkred");
   textSize(35);
   text("HealthPoints = " + String(HP), 10, 30);
+
+  fill("yellow");
+  textSize(35);
+  text("Points = " + String(Points), 1110, 35);
 
 };
 
