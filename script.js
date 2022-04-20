@@ -39,6 +39,7 @@ var ArrowDown = 40;
  */
 var beweegAlles = function () {
   // speler
+  console.log('Speler positie'+ spelerX + spelerY);
    if (keyIsDown(37)) {
     spelerX = spelerX - 10;
   }
