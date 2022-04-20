@@ -6,7 +6,7 @@ Gemaakt door:
   
 
 ### Beschrijving
-*Run and Jump with avoiding enemies!*
+*Shoot your enemies and dodge your enemies while trying to dodge them!*
 
 ## Mijn planning
 Werk de planning af van boven naar beneden<br>
