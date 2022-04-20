@@ -85,12 +85,15 @@ var tekenAlles = function () {
   // kogel
 
   // speler
-  fill("pink");
+  fill("black");
   rect(spelerX - 25, spelerY - 25, 50, 50);
   fill("green");
-  ellipse(spelerX, spelerY, 10, 30);
+  ellipse(spelerX, spelerY, 50, 50);
 
   // punten en health
+  fill("darkred");
+  textSize(32);
+  text("HealthPoints = " + String(HP), 10, 30);
 
 };
 
@@ -99,9 +102,13 @@ var tekenAlles = function () {
  * anders return false
  */
 var checkGameOver = function () {
+  if (HP<0) {
+    return true;
+  } else {
+    return false; 
+  }
   // check of HP 0 is , of tijd op is, of ...
-  return false;
-};
+
 
 /* ********************************************* */
 /* setup() en draw() functies / hoofdprogramma   */
