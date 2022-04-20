@@ -170,6 +170,10 @@ function draw() {
   }
   if (spelStatus === GAMEOVER) {
     // teken game-over scherm
+     fill("violet")
+    textSize(60);
+    text("Game Over, Dahlia >:(", 400, 420)
+
 
   }
 }
