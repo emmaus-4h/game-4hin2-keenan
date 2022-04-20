@@ -153,7 +153,7 @@ var tekenAlles = function () {
 
   fill("yellow");
   textSize(35);
-  text("Points = " + String(Points), 1110, 35);
+  text("Points = " + String(Points), 1050, 35);
 
 };
 
