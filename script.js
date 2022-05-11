@@ -23,6 +23,10 @@ var vijandY = 200; // y-positie van vijand
 var vijandX2 = 800; // x-positie van vijand 2
 var vijandY2 = 400; // y-positie van vijand 2
 
+var kogelX = 495; // x-positie van kogel
+var kogelY = 495; // y-positie van kogel
+
+
 
 
 var HP = 100; // HP van speler
@@ -82,6 +86,11 @@ var beweegAlles = function () {
 
 
   // kogel
+   kogelY = kogelY + 10;
+
+  if (kogelY > spelerY) {
+    kogelY = 0;
+  }
 };
 
 /**
@@ -140,6 +149,12 @@ var tekenAlles = function () {
 
 
   // kogel
+  fill("red")
+   if (keyIsDown(32)) {
+     rect(kogelX, kogelY, 10, 40);
+   }
+
+       
 
   // speler
   fill("black");
@@ -208,7 +223,7 @@ function draw() {
     // teken game-over scherm
      fill("violet")
     textSize(60);
-    text("Game Over, Dahlia >:(", 400, 420)
+    text("Game Over >:(", 400, 420)
 
 
   }
