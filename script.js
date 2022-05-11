@@ -134,8 +134,13 @@ var tekenAlles = function () {
   rect (0,0,1280,720);
   
   // vijand 
+  
+  function preload() { // preload is net als set up, om de code te starten
+  img = loadImage("Octupus.png");
+}
+  image(img, vijandX, vijandY);
+  
   fill("blue");
-    image(img, vijandX, vijandY);
   rect(vijandX - 25, vijandY - 25, 50, 50);
   fill("orange");
   ellipse(vijandX, vijandY, 50, 50);
@@ -200,10 +205,6 @@ var checkGameOver = function () {
 function setup() {
   // Maak een canvas (rechthoek) waarin je je speelveld kunt tekenen
   createCanvas(1280, 720);
-  
-function preload() { // preload is net als set up, om de code te starten
-  img = loadImage("Octupus.png");
-}
 
 
   // Kleur de achtergrond blauw, zodat je het kunt zien
