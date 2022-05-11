@@ -33,7 +33,7 @@ Basis: uitleg, spelen, afgaan en punten
 
 ### Uitbreidingen 1
 Uitbreiding: *bedenk iets, bijvoorbeeld meer tegenstanders*
-- [ ] *later uitwerken*
+- [x] plaatjes
 - [ ] *later uitwerken*
 - [ ] *later uitwerken*
 

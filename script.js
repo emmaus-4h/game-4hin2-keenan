@@ -26,11 +26,10 @@ var vijandY2 = 400; // y-positie van vijand 2
 var kogelX = 495; // x-positie van kogel
 var kogelY = 495; // y-positie van kogel
 
+var HP = 100; // hp van speler
+var Points = 0; // punten van speler
 
-
-
-var HP = 100; // HP van speler
-var Points = 0; // Punten van speler
+var img; // plaatjes laden
 
 
 var ArrowLeft = 37;
@@ -135,6 +134,8 @@ var tekenAlles = function () {
   rect (0,0,1280,720);
   
   // vijand
+  image(img, vijandX, vijandY);
+  
   fill("blue");
   rect(vijandX - 25, vijandY - 25, 50, 50);
   fill("orange");
@@ -200,6 +201,10 @@ var checkGameOver = function () {
 function setup() {
   // Maak een canvas (rechthoek) waarin je je speelveld kunt tekenen
   createCanvas(1280, 720);
+  
+function preload() { // preload is net als set up de code starten
+  img = loadImage("Octupus.png");
+
 
   // Kleur de achtergrond blauw, zodat je het kunt zien
   background('skyblue');
