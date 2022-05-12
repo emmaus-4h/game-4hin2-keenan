@@ -134,12 +134,12 @@ var tekenAlles = function () {
   rect (0,0,1280,720);
   
   // vijand 
-  image(img, vijandX, vijandY, 10, 10);
-  
   fill("blue");
   rect(vijandX - 25, vijandY - 25, 50, 50);
   fill("orange");
   ellipse(vijandX, vijandY, 50, 50);
+
+   image(img, vijandX-40, vijandY-30, 70, 70);
 
     // vijand 2
   fill("pink");
@@ -194,7 +194,7 @@ var checkGameOver = function () {
 /* ********************************************* */
 
   function preload() { // preload is net als set up, om de code te starten
-  img = loadImage("pictures/Octupus.png");
+  img = loadImage("pictures/Kirby.png");
 }
 /**
  * setup
