@@ -134,11 +134,7 @@ var tekenAlles = function () {
   rect (0,0,1280,720);
   
   // vijand 
-  
-  function preload() { // preload is net als set up, om de code te starten
-  img = loadImage("Octupus.png");
-}
-  image(img, vijandX, vijandY);
+  image(img, vijandX, vijandY, 10, 10);
   
   fill("blue");
   rect(vijandX - 25, vijandY - 25, 50, 50);
@@ -197,6 +193,9 @@ var checkGameOver = function () {
 /* setup() en draw() functies / hoofdprogramma   */
 /* ********************************************* */
 
+  function preload() { // preload is net als set up, om de code te starten
+  img = loadImage("pictures/Octupus.png");
+}
 /**
  * setup
  * de code in deze functie wordt één keer uitgevoerd door
