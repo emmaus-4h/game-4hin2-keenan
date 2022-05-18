@@ -154,7 +154,7 @@ var tekenAlles = function () {
 
   // kogel
   fill("red")
-   if (keyIsDown(32)) {
+   if (mouseIsPressed) {
      rect(kogelX, kogelY, 10, 40);
    }
 
