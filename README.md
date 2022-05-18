@@ -34,7 +34,7 @@ Basis: uitleg, spelen, afgaan en punten
 ### Uitbreidingen 1
 Uitbreiding: *bedenk iets, bijvoorbeeld meer tegenstanders*
 - [x] plaatjes
-- [ ] *later uitwerken*
+- [x] schieten
 - [ ] *later uitwerken*
 
 ### Uitbreidingen 2
