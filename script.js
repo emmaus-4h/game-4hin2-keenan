@@ -89,7 +89,7 @@ var beweegAlles = function () {
 
 
   // kogel
-   kogelY = kogelY - 10;
+   kogelY = kogelY - 20;
   if (mouseIsPressed) {
     kogelX = spelerX-5;
     kogelY = spelerY-20;
@@ -247,7 +247,8 @@ function draw() {
     textSize(30);
     text("Press Enter to Try Again", 450, 500)
     if (keyIsDown(13)) { // enter
-      var Game
+      spelerX = 600;
+      HP = 100;
       spelStatus = SPELEN;
     }
 
