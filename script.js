@@ -25,7 +25,7 @@ var vijandY2 = 400; // y-positie van vijand 2
 
 var kogelX // x-positie van kogel
 var kogelY // y-positie van kogel
-// var kogelVliegt = ; // vliegen van de kogel
+
 
 var HP = 100; // hp van speler
 var Points = 0; // punten van speler
