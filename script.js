@@ -25,6 +25,7 @@ var vijandY2 = 400; // y-positie van vijand 2
 
 var kogelX = 495; // x-positie van kogel
 var kogelY = 495; // y-positie van kogel
+// var kogelVliegt = ; // vliegen van de kogel
 
 var HP = 100; // hp van speler
 var Points = 0; // punten van speler
@@ -90,7 +91,7 @@ var beweegAlles = function () {
   // kogel
    kogelY = kogelY + 10;
 
-  if (kogelY > spelerY) {
+  if (kogelY > spelerY-20) {
     kogelY = 0;
   }
 };
