@@ -184,11 +184,12 @@ var tekenAlles = function () {
  * anders return false
  */
 var checkGameOver = function () {
-  if (HP<0) {
+  if (HP<0) { console.log("Game Over >:(");
     return true;
   } else {
     return false; 
   }
+
 
   };
   // check of HP 0 is , of tijd op is, of ...
