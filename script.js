@@ -200,7 +200,7 @@ var checkGameOver = function () {
 
   function preload() { // preload is net als set up, om de code te starten
   img = loadImage("pictures/Kirby.png");
-  img2 = loadImage("pictures/Shadow the Hedgehog.png");
+  img2 = loadImage("pictures/Shadow.png");
 }
 /**
  * setup
