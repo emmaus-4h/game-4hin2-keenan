@@ -12,7 +12,8 @@
 
 const SPELEN = 1;
 const GAMEOVER = 2;
-var spelStatus = SPELEN;
+const UITLEG = 3;
+var spelStatus = UITLEG;
 
 var spelerX = 600; // x-positie van speler
 var spelerY = 600; // y-positie van speler
@@ -227,6 +228,16 @@ function setup() {
  * uitgevoerd door de p5 library, nadat de setup functie klaar is
  */
 function draw() {
+    // teken uitleg scherm
+    background("black");
+
+    fill("yellow")
+    textSize(70);
+    text("Druk op s", 400, 420)
+    if (keyIsDown(83)) { // s
+      spelStatus = SPELEN;
+    }
+  // teken games
   if (spelStatus === SPELEN) {
     beweegAlles();
     verwerkBotsing();
@@ -239,7 +250,6 @@ function draw() {
     // teken game-over scherm
     background("black");
     
-    
      fill("violet")
     textSize(70);
     text("Game Over >:(", 400, 420)
@@ -251,7 +261,5 @@ function draw() {
       HP = 100;
       spelStatus = SPELEN;
     }
-
-
   }
 }
