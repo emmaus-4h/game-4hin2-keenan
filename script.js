@@ -150,6 +150,8 @@ var tekenAlles = function () {
   fill("red");
   ellipse(vijandX2, vijandY2, 50, 50);
 
+  image(img2, vijandX2-40, vijandY2-30, 70, 70);
+
 
 
   // kogel
@@ -198,6 +200,7 @@ var checkGameOver = function () {
 
   function preload() { // preload is net als set up, om de code te starten
   img = loadImage("pictures/Kirby.png");
+  img2 = loadImage("pictures/Shadow the Hedgehog.png");
 }
 /**
  * setup
