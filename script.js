@@ -31,12 +31,15 @@ var Points = 0; // punten van speler
 
 var img; // plaatjes laden
 
+// var Game = // de hele game laden
+
 
 var ArrowLeft = 37;
 var ArrowRight = 38;
 var ArrowUp = 39;
 var ArrowDown = 40;
 var Spacebar = 32;
+var Enter = 13;
 
 
 /* ********************************************* */
@@ -236,7 +239,7 @@ function draw() {
     textSize(30);
     text("Press Enter to Try Again", 450, 500)
     if (keyIsDown(13)) { // enter
-      var game =
+      var Game
       spelStatus = SPELEN;
     }
 

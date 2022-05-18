@@ -45,7 +45,7 @@ Uitbreiding: *bedenk iets, bijvoorbeeld bewegende achtergrond*
 
 ### Ideeen voor uitbreidingen
 Kies de uitbreidingen die je leuk vindt en maak je game nog mooier
-- [ ] Gebruik plaatjes voor de vijanden
+- [x] Gebruik plaatjes voor de vijanden
 - [ ] Animeer speler
 - [ ] Laat badges vallen die extra's aan speler geven
 - [ ] Maak spel steeds moeilijker door toenemend aantal vijanden met tekenVijand
