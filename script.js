@@ -226,9 +226,19 @@ function draw() {
   }
   if (spelStatus === GAMEOVER) {
     // teken game-over scherm
+    background("black");
+    
+    
      fill("violet")
-    textSize(60);
+    textSize(70);
     text("Game Over >:(", 400, 420)
+    fill("red")
+    textSize(30);
+    text("Press Enter to Try Again", 450, 500)
+    if (keyIsDown(13)) { // enter
+      var game =
+      spelStatus = SPELEN;
+    }
 
 
   }
