@@ -1,12 +1,12 @@
 Deze game is gebaseerd op het template voor 4HV van het Emmauscollege Rotterdam
 
-## Mijn spel: *naam van het spel*
+## Mijn spel: *De Slechtste Game Van De Universum*
 Gemaakt door:
 - *Keenan Cheung*
   
 
 ### Beschrijving
-*Shoot your enemies and dodge your enemies while trying to dodge them!*
+*Shoot your enemies and dodge your enemies while trying to score points!*
 
 ## Mijn planning
 Werk de planning af van boven naar beneden<br>
