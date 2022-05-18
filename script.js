@@ -233,7 +233,7 @@ function draw() {
 
     fill("yellow")
     textSize(70);
-    text("Druk op s", 400, 420)
+    text("Druk op s om te starten", 400, 420)
     if (keyIsDown(83)) { // s
       spelStatus = SPELEN;
     }
