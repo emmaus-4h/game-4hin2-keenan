@@ -89,9 +89,13 @@ var beweegAlles = function () {
 
 
   // kogel
-   kogelY = kogelY + 10;
-
-  if (kogelY > spelerY-20) {
+   kogelY = kogelY - 10;
+  if (mouseIsPressed) {
+    kogelX =spelerX;
+    kogelY =spelerY;
+    
+  }
+  if (kogelY <0) {
     kogelY = 0;
   }
 };
@@ -157,9 +161,8 @@ var tekenAlles = function () {
 
   // kogel
   fill("red")
-   if (mouseIsPressed) {
      rect(kogelX, kogelY, 10, 40);
-   }
+   
 
        
 
