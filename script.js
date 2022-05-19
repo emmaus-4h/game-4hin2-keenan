@@ -33,9 +33,6 @@ var Points = 0; // punten van speler
 
 var img; // plaatjes laden
 
-// var Game = // de hele game laden
-
-
 var ArrowLeft = 37;
 var ArrowRight = 38;
 var ArrowUp = 39;
@@ -189,7 +186,7 @@ var tekenAlles = function () {
  * anders return false
  */
 var checkGameOver = function () {
-  if (HP<0) { console.log("Game Over >:(");
+  if (HP<1) { console.log("Game Over >:(");
     return true;
   } else {
     return false; 
@@ -228,16 +225,29 @@ function setup() {
  * uitgevoerd door de p5 library, nadat de setup functie klaar is
  */
 function draw() {
-    // teken uitleg scherm
+    // tekent uitleg scherm
     background("black");
 
     fill("yellow")
     textSize(70);
-    text("Druk op s om te starten", 400, 420)
+    text("Druk op s om te starten", 290, 400)
     if (keyIsDown(83)) { // s
       spelStatus = SPELEN;
     }
-  // teken games
+  
+  // uitleg knop
+    fill(0, 255, 68); // start kleur
+    if (mouseIsPressed && mouseX > 430 && mouseX < 1000 && mouseY < 400 && mouseY > 150) { 
+        fill(122, 23, 214); // click kleur
+    }
+    rect(430, 500, 400, 100);  // de knop
+
+    // tekst van de knop
+    fill("blue");
+    textSize(50);
+    text("UITLEG", 450, 550);
+  
+  // tekent games
   if (spelStatus === SPELEN) {
     beweegAlles();
     verwerkBotsing();
@@ -247,15 +257,15 @@ function draw() {
     }
   }
   if (spelStatus === GAMEOVER) {
-    // teken game-over scherm
+    // tekent game-over scherm
     background("black");
     
      fill("violet")
     textSize(70);
-    text("Game Over >:(", 400, 420)
+    text("Game Over >:(", 400, 380)
     fill("red")
     textSize(30);
-    text("Press Enter to Try Again", 450, 500)
+    text("Press Enter to Try Again", 450, 460)
     if (keyIsDown(13)) { // enter
       spelerX = 600;
       HP = 100;
