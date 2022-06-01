@@ -88,6 +88,11 @@ var beweegAlles = function () {
   if (vijandY2 > 720) {
     vijandY2 = 0;
   }
+  
+  if (vijandY2 < 1)
+  {vijandX2 = random(100, 700)
+  };
+
 
 
   // kogel
