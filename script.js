@@ -246,15 +246,15 @@ function draw() {
   
   // uitleg knop
     fill(0, 255, 68); // start kleur
-    if (mouseIsPressed && mouseX > 430 && mouseX < 1000 && mouseY < 400 && mouseY > 150) { 
+    if (mouseIsPressed && mouseX > 440 && mouseX < 1000 && mouseY < 400 && mouseY > 150) { 
         fill(122, 23, 214); // click kleur
     }
-    rect(430, 500, 400, 100);  // de knop
+    rect(440, 480, 400, 100);  // de knop
 
     // tekst van de knop
     fill("blue");
-    textSize(50);
-    text("UITLEG", 450, 550);
+    textSize(60);
+    text("UITLEG", 530, 550);
   
   // tekent games
   if (spelStatus === SPELEN) {
