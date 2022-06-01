@@ -32,6 +32,8 @@ var HP = 100; // hp van speler
 var Points = 0; // punten van speler
 
 var img; // plaatjes laden
+var imgnamenlijst = ["pictures/Kirby.png", "pictures/Shadow.png"];
+var imglijst = [];
 
 var ArrowLeft = 37;
 var ArrowRight = 38;
@@ -96,7 +98,7 @@ var beweegAlles = function () {
 
 
   // kogel
-   kogelY = kogelY - 20;
+   kogelY = kogelY - 70;
   if (mouseIsPressed) {
     kogelX = spelerX-5;
     kogelY = spelerY-20;
@@ -107,7 +109,7 @@ var beweegAlles = function () {
   }
 };
 
-/**
+/**s
  * Checkt botsingen
  * Verwijdert neergeschoten dingen
  * Updatet globale variabelen punten en health
@@ -227,10 +229,7 @@ var checkGameOver = function () {
 /* setup() en draw() functies / hoofdprogramma   */
 /* ********************************************* */
 
-  function preload() { // preload is net als set up, om de code te starten
-  img = loadImage("pictures/Kirby.png");
-  img2 = loadImage("pictures/Shadow.png");
-}
+  function preload() {}
 /**
  * setup
  * de code in deze functie wordt één keer uitgevoerd door
