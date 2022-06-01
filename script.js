@@ -77,6 +77,10 @@ var beweegAlles = function () {
   if (vijandY > 720) {
     vijandY = 0;
   }
+  
+  if (vijandY < 1)
+  {vijandX = random(100, 700)
+  };
 
   // vijand 2
    vijandY2 = vijandY2 + 10;
