@@ -26,7 +26,7 @@ Basis: uitleg, spelen, afgaan en punten
 - [x] x. teken een bal, kogel (als die in je spel zit)
 - [x] x. beweeg de tegenspeler of je bal
 - [x] x. zet punten op het scherm 
-- [ ] x. zorg dat je punten kunt scoren
+- [x] x. zorg dat je punten kunt scoren
 - [x] x. zorg dat je af kunt
 - [x] x. maak game-over-scherm
 - [ ] x. maak uitlegscherm

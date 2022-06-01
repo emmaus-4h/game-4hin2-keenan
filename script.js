@@ -124,7 +124,6 @@ var verwerkBotsing = function () {
   }
 
   // botsing speler tegen vijand 2
-   // botsing speler tegen vijand
    if (vijandX2 - spelerX < 50 &&
     vijandX2 - spelerX > -50 &&
     vijandY2 - spelerY < 50 &&
@@ -135,6 +134,24 @@ var verwerkBotsing = function () {
   }
 
   // botsing kogel tegen vijand
+  if (kogelX - vijandX < 50 &&
+    kogelX - vijandX > -50 &&
+    kogelY - vijandY < 50 &&
+    kogelY - vijandY > -50
+  ) {
+    console.log("punt");
+    Points = Points+1;
+  }
+
+  // botsing kogel tegen vijand
+  if (kogelX - vijandX2 < 50 &&
+    kogelX - vijandX2 > -50 &&
+    kogelY - vijandY2 < 50 &&
+    kogelY - vijandY2 > -50
+  ) {
+    console.log("punt");
+    Points = Points+1;
+  }
 
   // update punten en health
 
@@ -255,6 +272,7 @@ function draw() {
     fill("blue");
     textSize(60);
     text("UITLEG", 530, 550);
+    
   
   // tekent games
   if (spelStatus === SPELEN) {
