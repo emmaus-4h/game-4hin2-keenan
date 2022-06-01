@@ -246,7 +246,7 @@ function draw() {
   
   // uitleg knop
     fill(0, 255, 68); // start kleur
-    if (mouseIsPressed && mouseX > 440 && mouseX < 960 && mouseY < 400 && mouseY > 150) { 
+    if (mouseIsPressed && mouseX > 440 && mouseX < 960 && mouseY < 580 && mouseY > 50) { 
         fill(122, 23, 214); // click kleur
     }
     rect(440, 480, 400, 100);  // de knop
