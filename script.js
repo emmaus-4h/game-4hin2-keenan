@@ -145,9 +145,11 @@ var verwerkBotsing = function () {
   ) {
     console.log("punt");
     Points = Points+1;
+    vijandX = 1350;
+    vijandY = 790;
   }
 
-  // botsing kogel tegen vijand
+  // botsing kogel tegen vijand 2
   if (kogelX - vijandX2 < 50 &&
     kogelX - vijandX2 > -50 &&
     kogelY - vijandY2 < 50 &&
@@ -155,6 +157,8 @@ var verwerkBotsing = function () {
   ) {
     console.log("punt");
     Points = Points+1;
+    vijandX2 = 1350;
+    vijandY2 = 790;
   }
 
   // update punten en health
