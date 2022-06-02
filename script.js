@@ -14,6 +14,7 @@ const SPELEN = 1;
 const GAMEOVER = 2;
 const BEGINSCHERM = 3;
 const UITLEG = 4;
+const WINNERSSCHERM = 5;
 
 var spelStatus = BEGINSCHERM;
 
@@ -297,6 +298,13 @@ function draw() {
     if (keyIsDown(32)) { // spatie
       spelStatus = BEGINSCHERM}
   }
+
+  // tekent winnersscherm
+  if (Points === 10) {
+    spelStatus = WINNERSSCHERM;
+    background("red");
+  }
+  
     
   
   // tekent games
