@@ -292,8 +292,8 @@ function draw() {
     textSize(100);
     text("Uitleg", 490, 130)
     fill("violet");
-    textSize(50);
-    text("Gebruik de pijltjes toetsen om te bewegen. Het doel van het spel is om vijanden dood te schieten. Als je vijanden dood schiet krijg je punten, als je 100 punten hebt gescored, dan heb je gewonnen. Ook ben je dood als je HP 0 is. Tot slot kan je op spatie drukken om terug te gaan naar de beginscherm. veel succes! >_<", 490, 160)
+    textSize(28);
+    text("Gebruik de pijltjes toetsen om te bewegen. Het doel van het spel is om vijanden dood te schieten. Als je vijanden dood schiet krijg je punten, als je 100 punten hebt gescored, dan heb je gewonnen. Ook ben je dood als je HP 0 is. Tot slot kan je op spatie drukken om terug te gaan naar de beginscherm. veel succes! >_<", 60, 220)
     if (keyIsDown(32)) { // spatie
       spelStatus = BEGINSCHERM}
   }
