@@ -288,7 +288,7 @@ function draw() {
   // tekent uitlegscherm met uitleg
   if (spelStatus === UITLEG) {
     background("pink");
-    fill("yellow");
+    fill("green");
     textSize(100);
     text("Uitleg", 490, 130)
     fill("violet");
