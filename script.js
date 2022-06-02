@@ -288,8 +288,9 @@ function draw() {
   // tekent uitlegscherm met uitleg
   if (spelStatus === UITLEG) {
     background("pink");
-    fill("white");
-    rect(100,100,500,500);
+    fill("yellow");
+    textSize(500);
+    text("Uitleg", 450, 200)
     if (keyIsDown(32)) { // spatie
       spelStatus = BEGINSCHERM}
   }
