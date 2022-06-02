@@ -15,6 +15,7 @@ const GAMEOVER = 2;
 const UITLEG = 3;
 var spelStatus = UITLEG;
 
+
 var spelerX = 600; // x-positie van speler
 var spelerY = 600; // y-positie van speler
 
@@ -31,9 +32,10 @@ var kogelY // y-positie van kogel
 var HP = 100; // hp van speler
 var Points = 0; // punten van speler
 
-var img; // plaatjes laden
-var img_namenlijst = ["pictures/Kirby.png", "pictures/Shadow.png"]; // plaatjes
-var img_lijst = []; // lijst wordt gevuld in preload
+
+var img_namenlijst = ['pictures/Kirby.png', 'pictures/Shadow.png']; // plaatjes
+var img_lijst =[]; // lijst wordt gevuld in preload
+
 
 var ArrowLeft = 37;
 var ArrowRight = 38;
@@ -231,7 +233,7 @@ var checkGameOver = function () {
 
   function preload() {
     for (var i = 0; i < img_namenlijst.length; i++) {
-      img_lijst[i] = loadImage (img_namenlijst[i]);
+      img_lijst[i] = loadImage(img_namenlijst[i]);
     }
   }
 /**
