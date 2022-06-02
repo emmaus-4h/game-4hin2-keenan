@@ -13,6 +13,7 @@
 const SPELEN = 1;
 const GAMEOVER = 2;
 const UITLEG = 3;
+
 var spelStatus = UITLEG;
 
 
@@ -260,7 +261,7 @@ function setup() {
  * uitgevoerd door de p5 library, nadat de setup functie klaar is
  */
 function draw() {
-    // tekent uitleg scherm
+    // tekent begin scherm
     background("black");
 
     fill("yellow")
