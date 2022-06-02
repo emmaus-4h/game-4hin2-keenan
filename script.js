@@ -275,6 +275,7 @@ function draw() {
     fill(0, 255, 68); // start kleur
     if (mouseIsPressed && mouseX > 440 && mouseX < 840 && mouseY < 580 && mouseY > 480) { 
         fill(122, 23, 214); // click kleur
+        spelStatus = UITLEG;
     }
     rect(440, 480, 400, 100);  // de knop
 
@@ -282,6 +283,15 @@ function draw() {
     fill("blue");
     textSize(60);
     text("UITLEG", 530, 550);
+
+  // tekent uitlegscherm met uitleg
+  
+  if (spelStatus === UITLEG) {
+    fill("white");
+    rect(100,100,500,500);
+    if (keyIsDown(32)) {// spatie
+      spelStatus = BEGIN}
+  }
     
   
   // tekent games
