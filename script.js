@@ -12,9 +12,10 @@
 
 const SPELEN = 1;
 const GAMEOVER = 2;
-const UITLEG = 3;
+const BEGINSCHERM = 3;
+const UITLEG = 4;
 
-var spelStatus = UITLEG;
+var spelStatus = BEGINSCHERM;
 
 
 var spelerX = 600; // x-positie van speler
@@ -286,10 +287,10 @@ function draw() {
 
   // tekent uitlegscherm met uitleg
   
-  if (spelStatus === UITLEG) {
+  if (spelStatus === BEGINSCHERM) {
     fill("white");
     rect(100,100,500,500);
-    if (keyIsDown(32)) {// spatie
+    if (keyIsDown(32)) { // spatie
       spelStatus = BEGIN}
   }
     
