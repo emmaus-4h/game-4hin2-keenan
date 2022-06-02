@@ -15,7 +15,7 @@ const GAMEOVER = 2;
 const BEGINSCHERM = 3;
 const UITLEG = 4;
 
-var spelStatus = UITLEG ;
+var spelStatus = BEGINSCHERM;
 
 
 var spelerX = 600; // x-positie van speler
@@ -293,7 +293,7 @@ function draw() {
     text("Uitleg", 490, 130)
     fill("violet");
     textSize(28);
-    text("Gebruik de pijltjes toetsen om te bewegen. Het doel van het spel is om vijanden dood te schieten. Als je vijanden dood schiet krijg je punten, als je 100 punten hebt gescored, dan heb je gewonnen. Ook ben je dood als je HP 0 is. Tot slot kan je op spatie drukken om terug te gaan naar de beginscherm. veel succes! >_<", 60, 220)
+    text("Gebruik de pijltjes toetsen om te bewegen. Het doel van het spel is om vijanden dood te schieten.\nAls je vijanden dood schiet krijg je punten, als je 100 punten hebt gescored, dan heb je gewonnen.\nOok heb je verloren als je HP 0 is, dan ben je dood.\n\nTot slot kan je op spatie drukken om terug te gaan naar het beginscherm.\n\nveel succes! >_<", 40, 220)
     if (keyIsDown(32)) { // spatie
       spelStatus = BEGINSCHERM}
   }
