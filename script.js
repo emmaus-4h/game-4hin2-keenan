@@ -300,9 +300,19 @@ function draw() {
   }
 
   // tekent winnersscherm
-  if (Points === 0) {
+  if (Points === 100) {
     spelStatus = WINNERSSCHERM;
     background("grey");
+     fill("purple")
+    textSize(100);
+    text("YOU WIN >:(", 350, 400)
+    fill("orange")
+    textSize(30);
+    text("Press Enter to WIN Again", 450, 470)
+    if (keyIsDown(13)) { // enter
+      spelerX = 600;
+      HP = 100;
+      spelStatus = SPELEN
   }
   
     
