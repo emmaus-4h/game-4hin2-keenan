@@ -29,18 +29,18 @@ Basis: uitleg, spelen, afgaan en punten
 - [x] x. zorg dat je punten kunt scoren
 - [x] x. zorg dat je af kunt
 - [x] x. maak game-over-scherm
-- [ ] x. maak uitlegscherm
+- [x] x. maak uitlegscherm
 
 ### Uitbreidingen 1
 Uitbreiding: *bedenk iets, bijvoorbeeld meer tegenstanders*
 - [x] plaatjes
 - [x] schieten
-- [ ] winners scherm
+- [ ] winnersscherm
 
 ### Uitbreidingen 2
 Uitbreiding: *bedenk iets, bijvoorbeeld bewegende achtergrond*
-- [ ] *later uitwerken*
-- [ ] *later uitwerken*
+- [ ] plaatjes bij beginscherm zetten
+- [ ] plaatjes bij winnersscherm zetten
 - [ ] *later uitwerken*
 
 ### Ideeen voor uitbreidingen
