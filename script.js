@@ -300,7 +300,7 @@ function draw() {
   }
 
   // tekent winnersscherm
-  if (Points === 10) {
+  if (Points === 100) {
     spelStatus = WINNERSSCHERM;
     background("red");
   }
