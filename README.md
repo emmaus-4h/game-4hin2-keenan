@@ -35,7 +35,7 @@ Basis: uitleg, spelen, afgaan en punten
 Uitbreiding: *bedenk iets, bijvoorbeeld meer tegenstanders*
 - [x] plaatjes
 - [x] schieten
-- [ ] *later uitwerken*
+- [ ] winners scherm
 
 ### Uitbreidingen 2
 Uitbreiding: *bedenk iets, bijvoorbeeld bewegende achtergrond*
@@ -48,9 +48,9 @@ Kies de uitbreidingen die je leuk vindt en maak je game nog mooier
 - [x] Gebruik plaatjes voor de vijanden
 - [ ] Animeer speler
 - [ ] Laat badges vallen die extra's aan speler geven
-- [ ] Maak spel steeds moeilijker door toenemend aantal vijanden met tekenVijand
+- [x] Maak spel steeds moeilijker door toenemend aantal vijanden met tekenVijand
 - [ ] Maak andere vijanden bij toenemen tekenVijand
-- [ ] Laat vijanden bewegen in patronen
+- [x] Laat vijanden bewegen in patronen
 - [ ] Maak bediening met touch of bewegen van telefoon mogelijk (zorg dat toetsenbordbediening ook blijft werken)
 - [ ] ...
 
