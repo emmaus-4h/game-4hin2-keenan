@@ -294,7 +294,7 @@ function draw() {
     text("Uitleg", 490, 130)
     fill("violet");
     textSize(28);
-    text("Gebruik de pijltjes toetsen om te bewegen. Het doel van het spel is om vijanden dood te schieten.\nAls je vijanden dood schiet krijg je punten, als je 100 punten hebt gescored, dan heb je gewonnen.\nOok heb je verloren als je HP 0 is, dan ben je dood.\n\nTot slot kan je op spatie drukken om terug te gaan naar het beginscherm.\n\nveel succes! >_<", 40, 220)
+    text("Gebruik de pijltjes toetsen om te bewegen. Het doel van het spel is om vijanden dood te schieten.\nAls je vijanden dood schiet krijg je punten, als je 50 punten hebt gescored, dan heb je gewonnen.\nOok heb je verloren als je HP 0 is, dan ben je dood.\n\nTot slot kan je op spatie drukken om terug te gaan naar het beginscherm.\n\nveel succes! >_<", 40, 220)
     if (keyIsDown(32)) { // spatie
       spelStatus = BEGINSCHERM}
   }
@@ -302,17 +302,10 @@ function draw() {
   // tekent winnersscherm
   if (Points === 100) {
     spelStatus = WINNERSSCHERM;
-    background("grey");
+    background("yellow");
      fill("purple")
-    textSize(100);
+    textSize(50);
     text("YOU WIN >:(", 350, 400)
-    fill("orange")
-    textSize(30);
-    text("Press Enter to WIN Again", 450, 470)
-    if (keyIsDown(13)) { // enter
-      spelerX = 600;
-      HP = 100;
-      spelStatus = SPELEN
   }
   
     

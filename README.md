@@ -35,7 +35,7 @@ Basis: uitleg, spelen, afgaan en punten
 Uitbreiding: *bedenk iets, bijvoorbeeld meer tegenstanders*
 - [x] plaatjes
 - [x] schieten
-- [ ] winnersscherm
+- [x] winnersscherm
 
 ### Uitbreidingen 2
 Uitbreiding: *bedenk iets, bijvoorbeeld bewegende achtergrond*
