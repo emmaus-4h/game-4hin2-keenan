@@ -15,7 +15,7 @@ const GAMEOVER = 2;
 const BEGINSCHERM = 3;
 const UITLEG = 4;
 
-var spelStatus = BEGINSCHERM;
+var spelStatus = UITLEG ;
 
 
 var spelerX = 600; // x-positie van speler
@@ -289,8 +289,11 @@ function draw() {
   if (spelStatus === UITLEG) {
     background("pink");
     fill("yellow");
-    textSize(500);
-    text("Uitleg", 450, 200)
+    textSize(100);
+    text("Uitleg", 490, 130)
+    fill("yell");
+    textSize(100);
+    text("Uitleg", 490, 130)
     if (keyIsDown(32)) { // spatie
       spelStatus = BEGINSCHERM}
   }
