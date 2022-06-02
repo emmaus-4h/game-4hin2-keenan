@@ -33,7 +33,7 @@ var Points = 0; // punten van speler
 
 var img; // plaatjes laden
 var img_namenlijst = ["pictures/Kirby.png", "pictures/Shadow.png"]; // plaatjes
-var img_lijst = []; // lijst met plaatjes
+var img_lijst = []; // lijst wordt gevuld in preload
 
 var ArrowLeft = 37;
 var ArrowRight = 38;
