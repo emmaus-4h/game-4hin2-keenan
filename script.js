@@ -86,7 +86,7 @@ var beweegAlles = function () {
   }
   
   if (vijandY < 1)
-  {vijandX = random(0 && 2000, 700)
+  {vijandX = random(0, 700 && 1200, 700)
   };
 
   // vijand 2
@@ -97,7 +97,7 @@ var beweegAlles = function () {
   }
   
   if (vijandY2 < 1)
-  {vijandX2 = random(0 && 2000, 700)
+  {vijandX2 = random(0, 700 && 1200, 700)
   };
 
 
