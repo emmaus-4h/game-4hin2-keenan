@@ -286,12 +286,12 @@ function draw() {
     text("UITLEG", 530, 550);
 
   // tekent uitlegscherm met uitleg
-  
-  if (spelStatus === BEGINSCHERM) {
+  if (spelStatus === UITLEG) {
+    background("pink");
     fill("white");
     rect(100,100,500,500);
     if (keyIsDown(32)) { // spatie
-      spelStatus = BEGIN}
+      spelStatus = BEGINSCHERM}
   }
     
   
