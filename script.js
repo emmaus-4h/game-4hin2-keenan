@@ -86,7 +86,7 @@ var beweegAlles = function () {
   }
   
   if (vijandY < 1)
-  {vijandX = random(100, 700)
+  {vijandX = random(1200, 700)
   };
 
   // vijand 2
@@ -97,7 +97,7 @@ var beweegAlles = function () {
   }
   
   if (vijandY2 < 1)
-  {vijandX2 = random(100, 700)
+  {vijandX2 = random(1200, 700)
   };
 
 
@@ -300,7 +300,7 @@ function draw() {
   }
 
   // tekent winnersscherm
-  if (Points === 100) {
+  if (Points === 50) {
     spelStatus = WINNERSSCHERM;
     background("yellow");
      fill("purple")
