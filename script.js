@@ -175,7 +175,7 @@ var tekenAlles = function () {
   fill("orange");
   ellipse(vijandX, vijandY, 50, 50);
 
-   image(img, vijandX-40, vijandY-30, 70, 70);
+   image(img_lijst[0], vijandX-40, vijandY-30, 70, 70);
 
     // vijand 2
   fill("pink");
@@ -183,7 +183,7 @@ var tekenAlles = function () {
   fill("red");
   ellipse(vijandX2, vijandY2, 50, 50);
 
-  image(img2, vijandX2-40, vijandY2-30, 70, 70);
+  image(img_lijst[1], vijandX2-40, vijandY2-30, 70, 70);
 
 
 
@@ -298,7 +298,6 @@ function draw() {
     fill("red")
     textSize(30);
     text("Press Enter to Try Again", 450, 460)
-    image(img_lijst[0], 0, 0, 1280, 720); // image loading
     if (keyIsDown(13)) { // enter
       spelerX = 600;
       HP = 100;
