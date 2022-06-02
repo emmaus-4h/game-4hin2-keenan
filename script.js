@@ -32,8 +32,8 @@ var HP = 100; // hp van speler
 var Points = 0; // punten van speler
 
 var img; // plaatjes laden
-var imgnamenlijst = ["pictures/Kirby.png", "pictures/Shadow.png"];
-var imglijst = [];
+var img_namenlijst = ["pictures/Kirby.png", "pictures/Shadow.png"]; // plaatjes
+var img_lijst = []; // lijst met plaatjes
 
 var ArrowLeft = 37;
 var ArrowRight = 38;
@@ -229,7 +229,11 @@ var checkGameOver = function () {
 /* setup() en draw() functies / hoofdprogramma   */
 /* ********************************************* */
 
-  function preload() {}
+  function preload() {
+    for (var i = 0; i < img_namenlijst.length; i++) {
+      img_lijst[i] = loadImage (img_namenlijst[i]);
+    }
+  }
 /**
  * setup
  * de code in deze functie wordt één keer uitgevoerd door
@@ -292,6 +296,7 @@ function draw() {
     fill("red")
     textSize(30);
     text("Press Enter to Try Again", 450, 460)
+    image(img_lijst[0],0,0, 1280, 720);
     if (keyIsDown(13)) { // enter
       spelerX = 600;
       HP = 100;
