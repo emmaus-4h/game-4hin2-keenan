@@ -296,7 +296,7 @@ function draw() {
     fill("red")
     textSize(30);
     text("Press Enter to Try Again", 450, 460)
-    image(img_lijst[0],0,0, 1280, 720);
+    image(img_lijst[0], 0, 0, 1280, 720); // image loading
     if (keyIsDown(13)) { // enter
       spelerX = 600;
       HP = 100;
