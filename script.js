@@ -310,7 +310,8 @@ function draw() {
     image(img_lijst[4], 750, 400, 300, 300);   
   }
   
-  if (spelStatus === WINNERSSCHERM) console.log("winnersscherm, :z"); {
+  if (spelStatus === WINNERSSCHERM) {
+    
       // tekent winnersscherm
     background("yellow");
      fill("purple")
