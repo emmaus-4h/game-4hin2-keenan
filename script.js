@@ -36,7 +36,7 @@ var HP = 100; // hp van speler
 var Points = 0; // punten van speler
 
 
-var img_namenlijst = ['pictures/Kirby.png', 'pictures/Shadow.png']; // plaatjes
+var img_namenlijst = ['pictures/Kirby.png', 'pictures/Shadow.png', 'pictures/Sonic.gif']; // plaatjes en gifs
 var img_lijst =[]; // lijst wordt gevuld in preload
 
 
@@ -306,6 +306,10 @@ function draw() {
      fill("purple")
     textSize(50);
     text("YOU WIN >:(", 460, 400)
+
+    // tekent plaatjes bij de winnaarsscherm
+
+    image(img_lijst[2], vijandX2-40, vijandY2-30, 70, 70);  
   }
   
     
