@@ -263,7 +263,7 @@ function setup() {
  * uitgevoerd door de p5 library, nadat de setup functie klaar is
  */
 function draw() {
-
+  
   if (spelStatus === BEGINSCHERM) {
     // tekent begin scherm
     background("black");
@@ -278,7 +278,6 @@ function draw() {
   
     // uitleg knop
     fill(0, 255, 68); // start kleur
-  
     rect(440, 480, 400, 100);  // de knop
 
     // tekst van de knop
@@ -289,7 +288,7 @@ function draw() {
     if (keyIsDown(83)) { // s
       spelStatus = SPELEN;
     }
-    if (mouseIsPressed && mouseX > 440 && mouseX < 840 && mouseY < 580 && mouseY > 480) { // klik op knop 
+    if (mouseIsPressed && mouseX > 440 && mouseX < 840 && mouseY < 580 && mouseY > 480) { // klik op de knop 
         fill(122, 23, 214); // click kleur
         spelStatus = UITLEG;
     }
@@ -316,8 +315,9 @@ function draw() {
     background("yellow");
      fill("purple")
     textSize(50);
-    text("YOU WIN >:(", 460, 400)
-    text("druk op refresh om opnieuw te beginnen", 100, 600)
+    text("YOU WIN >:(", 480, 400)
+     fill("blue")
+    text("Press Refresh To Play Again", 100, 600)
 
     // tekent plaatjes bij de winnaarsscherm
     image(img_lijst[2], 100, 70, 300, 300);  
