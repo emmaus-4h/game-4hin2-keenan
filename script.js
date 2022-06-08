@@ -305,7 +305,7 @@ function draw() {
     background("yellow");
      fill("purple")
     textSize(50);
-    text("YOU WIN >:(", 350, 400)
+    text("YOU WIN >:(", 460, 400)
   }
   
     
