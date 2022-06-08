@@ -36,7 +36,7 @@ var HP = 100; // hp van speler
 var Points = 0; // punten van speler
 
 
-var img_namenlijst = ['pictures/Kirby.png', 'pictures/Shadow.png', 'pictures/Sonic.gif', 'pictures/Shadow the Hedgehog.png']; // plaatjes en gifs
+var img_namenlijst = ['pictures/Kirby.png', 'pictures/Shadow.png', 'pictures/Sonic.gif', 'pictures/Shadow the Hedgehog.png', 'pictures/QuestionBlock3DWorld.png']; // plaatjes en gifs
 var img_lijst =[]; // lijst wordt gevuld in preload
 
 
@@ -297,6 +297,9 @@ function draw() {
     text("Gebruik de pijltjes toetsen om te bewegen. Het doel van het spel is om vijanden dood te schieten.\nAls je vijanden dood schiet krijg je punten, als je 50 punten hebt gescored, dan heb je gewonnen.\nOok heb je verloren als je HP 0 is, dan ben je dood.\n\nTot slot kan je op spatie drukken om terug te gaan naar het beginscherm.\n\nveel succes! >_<", 40, 220)
     if (keyIsDown(32)) { // spatie
       spelStatus = BEGINSCHERM}
+
+    // tekent plaatjes bij uitlegscherm
+    image(img_lijst[4], 750, 400, 300, 300);   
   }
 
   // tekent winnersscherm
