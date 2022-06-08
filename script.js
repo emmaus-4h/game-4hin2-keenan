@@ -36,7 +36,7 @@ var HP = 100; // hp van speler
 var Points = 0; // punten van speler
 
 
-var img_namenlijst = ['pictures/Kirby.png', 'pictures/Shadow.png', 'pictures/Sonic.gif', 'pictures/Shadow the Hedgehog.png', 'pictures/QuestionBlock3DWorld.png', 'pictures/Kakashi.jpg']; // plaatjes en gifs
+var img_namenlijst = ['pictures/Kirby.png', 'pictures/Shadow.png', 'pictures/Sonic.gif', 'pictures/Shadow the Hedgehog.png', 'pictures/QuestionBlock3DWorld.png', 'pictures/Kakashi.jpg', 'pictures/Jibanyan.jpg']; // plaatjes en gifs
 var img_lijst =[]; // lijst wordt gevuld in preload
 
 
