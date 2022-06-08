@@ -1,7 +1,7 @@
 {
   "name": "De Slechtste Game Van De Universum",
   "short_name": "Schieten op vijanden",
-  "icons": [{
+  "icons": ["pictures/icon-512x512.png"{
     "src": "icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
