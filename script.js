@@ -264,7 +264,7 @@ function setup() {
  */
 function draw() {
   
-  if (spelStatus === BEGINSCHERM) console.log("beginscherm, :p"); {
+  if (spelStatus === BEGINSCHERM) {
     // tekent begin scherm
     background("black");
 
