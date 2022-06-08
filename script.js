@@ -274,7 +274,7 @@ function draw() {
     }
 
   // tekent plaatjes bij beginscherm
-  image(img_lijst[5], 950, 20, 250, 250); 
+  image(img_lijst[5], 950, 50, 250, 250); 
   image(img_lijst[6], 100, 450, 250, 250);
   
   // uitleg knop
