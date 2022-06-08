@@ -40,8 +40,8 @@ Uitbreiding: *bedenk iets, bijvoorbeeld meer tegenstanders*
 ### Uitbreidingen 2
 Uitbreiding: *bedenk iets, bijvoorbeeld bewegende achtergrond*
 - [ ] plaatjes bij beginscherm zetten
-- [ ] plaatjes bij winnersscherm zetten
-- [ ] *later uitwerken*
+- [x] plaatjes bij winnersscherm zetten
+- [x] plaatjes bij uitlegscherm zetten
 
 ### Ideeen voor uitbreidingen
 Kies de uitbreidingen die je leuk vindt en maak je game nog mooier
