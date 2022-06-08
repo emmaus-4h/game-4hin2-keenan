@@ -300,7 +300,7 @@ function draw() {
   }
 
   // tekent winnersscherm
-  if (Points === 50) {
+  if (Points === 0) {
     spelStatus = WINNERSSCHERM;
     background("yellow");
      fill("purple")
@@ -308,8 +308,7 @@ function draw() {
     text("YOU WIN >:(", 460, 400)
 
     // tekent plaatjes bij de winnaarsscherm
-
-    image(img_lijst[2], vijandX2-40, vijandY2-30, 70, 70);  
+    image(img_lijst[2], 100, 100, 300, 300);  
   }
   
     
