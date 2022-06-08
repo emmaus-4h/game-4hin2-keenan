@@ -263,26 +263,22 @@ function setup() {
  * uitgevoerd door de p5 library, nadat de setup functie klaar is
  */
 function draw() {
+
+  if (spelStatus === BEGINSCHERM) {
     // tekent begin scherm
     background("black");
 
     fill("yellow")
     textSize(70);
     text("Druk op s om te starten", 290, 400)
-    if (keyIsDown(83)) { // s
-      spelStatus = SPELEN;
-    }
 
-  // tekent plaatjes bij beginscherm
-  image(img_lijst[5], 950, 50, 250, 250); 
-  image(img_lijst[6], 100, 450, 250, 250);
+    // tekent plaatjes bij beginscherm
+    image(img_lijst[5], 950, 50, 250, 250); 
+    image(img_lijst[6], 100, 450, 250, 250);
   
-  // uitleg knop
+    // uitleg knop
     fill(0, 255, 68); // start kleur
-    if (mouseIsPressed && mouseX > 440 && mouseX < 840 && mouseY < 580 && mouseY > 480) { 
-        fill(122, 23, 214); // click kleur
-        spelStatus = UITLEG;
-    }
+  
     rect(440, 480, 400, 100);  // de knop
 
     // tekst van de knop
@@ -290,6 +286,15 @@ function draw() {
     textSize(60);
     text("UITLEG", 530, 550);
 
+    if (keyIsDown(83)) { // s
+      spelStatus = SPELEN;
+    }
+    if (mouseIsPressed && mouseX > 440 && mouseX < 840 && mouseY < 580 && mouseY > 480) { // klik op knop 
+        fill(122, 23, 214); // click kleur
+        spelStatus = UITLEG;
+    }
+  }
+  
   // tekent uitlegscherm met uitleg
   if (spelStatus === UITLEG) {
     background("pink");
@@ -305,21 +310,19 @@ function draw() {
     // tekent plaatjes bij uitlegscherm
     image(img_lijst[4], 750, 400, 300, 300);   
   }
-
-  // tekent winnersscherm
-  if (Points === 30) {
-    spelStatus = WINNERSSCHERM;
+  
+  if (spelStatus === WINNERSSCHERM) {
+      // tekent winnersscherm
     background("yellow");
      fill("purple")
     textSize(50);
     text("YOU WIN >:(", 460, 400)
+    text("druk op refresh om opnieuw te beginnen", 100, 600)
 
     // tekent plaatjes bij de winnaarsscherm
     image(img_lijst[2], 100, 70, 300, 300);  
     image(img_lijst[3], 900, 400, 300, 300);  
   }
-  
-    
   
   // tekent games
   if (spelStatus === SPELEN) {
@@ -328,6 +331,9 @@ function draw() {
     tekenAlles();
     if (checkGameOver()) {
       spelStatus = GAMEOVER;
+    }
+    if (Points === 30) {
+       spelStatus = WINNERSSCHERM;
     }
   }
   if (spelStatus === GAMEOVER) {
@@ -347,3 +353,29 @@ function draw() {
     }
   }
 }
+
+/*
+if (spelStatus === IETS) {
+  doe dit
+  doe dat
+  if (af of toets ingedrukt) {
+    spelStatus = IETSNIEWS;
+  }
+ }
+
+if (spelStatus === IETS) {
+  doe dit
+  doe dat
+  if (af of toets ingedrukt) {
+    spelStatus = IETSNIEWS;
+  }
+ }
+
+if (spelStatus === IETS) {
+  doe dit
+  doe dat
+  if (af of toets ingedrukt) {
+    spelStatus = IETSNIEWS;
+  }
+ }
+*/
