@@ -39,7 +39,7 @@ Uitbreiding: *bedenk iets, bijvoorbeeld meer tegenstanders*
 
 ### Uitbreidingen 2
 Uitbreiding: *bedenk iets, bijvoorbeeld bewegende achtergrond*
-- [ ] plaatjes bij beginscherm zetten
+- [x] plaatjes bij beginscherm zetten
 - [x] plaatjes bij winnersscherm zetten
 - [x] plaatjes bij uitlegscherm zetten
 
