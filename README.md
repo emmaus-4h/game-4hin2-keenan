@@ -36,7 +36,7 @@ Uitbreiding: *bedenk iets, bijvoorbeeld meer tegenstanders*
 - [x] plaatjes
 - [x] schieten
 - [x] winnersscherm
-- [x] vijanden bewegen sneller naarmate het spel bijna klaar is
+- [x] vijanden bewegen sneller naarmate je bijna wint
 
 ### Uitbreidingen 2
 Uitbreiding: *bedenk iets, bijvoorbeeld bewegende achtergrond*
