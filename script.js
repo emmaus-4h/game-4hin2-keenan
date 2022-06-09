@@ -165,6 +165,10 @@ var verwerkBotsing = function () {
   }
 
   // update punten en health
+  if (Points >= 15) {
+    vijandY = vijandY + 13;
+    vijandY2 = vijandY2 + 13;
+  }
 
 };
 
