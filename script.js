@@ -169,7 +169,6 @@ var verwerkBotsing = function () {
     vijandY = vijandY + 13;
     vijandY2 = vijandY2 + 13;
   }
-
 };
 
 /**
