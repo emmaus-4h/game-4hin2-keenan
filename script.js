@@ -353,6 +353,7 @@ function draw() {
     if (keyIsDown(13)) { // enter
       spelerX = 600;
       HP = 100;
+      Points = 0;
       spelStatus = SPELEN;
     }
   }
